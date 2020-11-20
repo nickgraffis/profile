@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="weather.css">
+  <script src="https://kit.fontawesome.com/7652f157a9.js" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body class="h-screen bg-white">
+  <div class="w-100 h-12 grid grid-cols-12 m-4">
+    <span class="justify-self-start col-span-6 flex flex-col text-gray-800" style="font-family: 'Mark Pro Medium'; font-weight: 500; font-size: 1.1rem; line-height: 1.4;">
+      <span>Nick Graffis &#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;</span>
+      <span>🏠 Working Remotley</span>
+    </span>
+    <div class="col-span-2 flex">
+      <span class="flex flex-col text-gray-600 z-20 absolute" style="font-family: 'Mark Pro Medium'; font-weight: 500; font-size: 1.1rem; line-height: 1.4;">
+        <span class="self-start text-gray-800">Latest Projects</span>
+        <div class="flex items-center">
+          <span class="text-blue-500 mr-8" style="font-size: 8px;">
+            <i class="fas fa-circle"></i>
+          </span>
+          <div class="flex justify-start">
+            <span class="text-gray-800">Weather App</span>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <span class="text-blue-500 opacity-0 mr-8" style="font-size: 8px;">
+            <i class="fas fa-circle"></i>
+          </span>
+          <div class="flex justify-start">
+            <span>Hadena</span>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <span class="text-blue-500 opacity-0 mr-8" style="font-size: 8px;">
+            <i class="fas fa-circle"></i>
+          </span>
+          <div class="flex justify-start">
+            <span>Matematekier.js</span>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <span class="text-blue-500 opacity-0 mr-8" style="font-size: 8px;">
+            <i class="fas fa-circle"></i>
+          </span>
+          <div class="flex justify-start">
+            <span>Nerdy Games</span>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <span class="text-blue-500 opacity-0 mr-8" style="font-size: 8px;">
+            <i class="fas fa-circle"></i>
+          </span>
+          <div class="flex justify-start">
+            <span>Gringots</span>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <span class="text-blue-500 opacity-0 mr-8" style="font-size: 8px;">
+            <i class="fas fa-circle"></i>
+          </span>
+          <span>more...</span>
+        </div>
+      </span>
+    </div>
+    <div class="col-span-4 flex justify-end">
+      <div class="flex justify-between">
+        <span class="text-2xl mx-6" style="color: rgb(217, 89, 136);"><i class="fab fa-dribbble"></i></span>
+        <span class="w-10 h-10 mx-6"><img src="Octocat.png" alt=""></span>
+        <span class="text-2xl mx-6"><i class="fab fa-codepen"></i></span>
+      </div>
+    </div>
+  </div>
+  <div class="grid grid-cols-12">
+    <div class="col-span-12 flex flex-col items-center">
+      <!-- <span class="text-6xl font-extrabold tacking-widest absolute" style="top: 25vh; left: 8vh; color: rgb(203, 98, 52)">Weather App</span> -->
+      <div id="i-wrapper" class="i-wrapper rounded-full flex justify-center items-center" style="height: 60vh; width: 60vh; margin-right: 55vh;  margin-top: -50px;">
+        <div class="sky rounded-full" style="height: 50vh; width: 50vh;">
+          <div class= "sun"></div>
+          <div class="cloud">
+            <div class="shadow-xl"></div>
+            <div class="shadow-xl"></div>
+            <div class="shadow-xl"></div>
+            <div class="shadow-xl"></div>
+          </div>
+          <div class="golden-gate">
+            <div class="capLeft"></div>
+            <div class="capRight"></div>
+            <div class="wires">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <ul class="bridgeConnect">
+              <li>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </li>
+              <li>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </li>
+              <li>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </li>
+              <li>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </li>
+            </ul>
+            <div class="bridgeLeft"></div>
+            <div class="bridgeRight"></div>
+          </div>
+      </div>
+      </div>
+      <div class="flex" style="z-index: -1; font-size: 33.5vw; margin-top: -25vw;">
+        <div class="font-black tracking-widest NICK">N</div>
+        <div class="font-black tracking-widest NICK">I</div>
+        <div class="font-black tracking-widest NICK">C</div>
+        <div class="font-black tracking-widest NICK">K</div>
+      </div>
+      <!-- <img class="absolute" style="z-index: -5; margin-top: 25.7vw; margin-left: 6vw;" src="mi.png" width="200" height="200" alt="" /> -->
+      <img class="absolute" style="z-index: -6; margin-top: 25.7vw; margin-left: 6vw;" src="mihi.png" width="200" height="200" alt="" />
+      <div class="absolute" style="z-index: 1; margin-top: 23vw; margin-left: 20vw;">
+        <p class="font-semibold p-4 text-md h-24 border-4 border-gray-800 rounded-xl bg-white font-mono text-gray-800" style="z-index: 1; width: 300px; box-shadow: 4px 4px rgb(47, 55, 21);">
+          Hey, 👋! My name is Nick! How can I help you?...
+        </p>
+        <div class="flex justify-between m-4">
+          <div class="font-semibold p-4 text-md h-12 w-24 border-4 border-gray-800 rounded-xl bg-white font-mono text-gray-800" style="box-shadow: 4px 4px rgb(47, 55, 21);"></div>
+          <div class="font-semibold p-4 text-md h-12 w-24 border-4 border-gray-800 rounded-xl bg-white font-mono text-gray-800" style="box-shadow: 4px 4px rgb(47, 55, 21);"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-span-2">
+    </div>
+</div>
+<div class="grid grid-cols-12">
+  <div class="col-span-7">
+
+  </div>
+  <div class="col-span-5">
+    <p class="" style="font-family: 'Mark Pro Medium'; font-size: calc(33px + 52*(100vw - 500px)/1900); line-height: 1.1; font-weight: 700;">
+      Hello, I am a full stack web developer and programmer. I am really interested in creating incredible user experiences,
+      fast, functional, and novel programs, and learning new techonlogy. I love JavaScript, Python, Go, CSS and anthing else
+      I come across.
+    </p>
+  </div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script>
+function test() {
+  alert('test');
+  $("#i-wrapper").addClass('i-wrapper');
+}
+</script>
+</body>
+
+</html>
